@@ -129,3 +129,13 @@ main > section { padding: 72px 0 0; }
   .lb-next { right: calc(50% - 56px); }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .shot img { transition: none; } }
+
+/* the newest build: a pill at the top, and the changelog's first entry as a gold card */
+.pills { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 2px 12px 2px 3px; border: 1px solid #4a3a12; border-radius: 999px; background: #1c1508; font-size: 0.8rem; color: var(--fg); text-decoration: none; }
+.pill b { padding: 1px 8px; border-radius: 999px; background: var(--primary); color: var(--primary-fg); font-size: 0.7rem; }
+.pill:hover { border-color: var(--primary); }
+.log article:first-child { padding: 20px 22px; margin-left: -8px; border: 1px solid #4a3a12; border-radius: var(--radius); background: linear-gradient(135deg, #1c1508, var(--card) 60%); }
+.log article:first-child::before { left: -21px; top: 27px; box-shadow: 0 0 0 4px rgb(252 211 77 / 0.2); }
+.log article:first-child header::after { content: "Just released"; margin-left: auto; font: 600 0.7rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); }
+.log article:first-child ul { color: #d4d4d8; }
