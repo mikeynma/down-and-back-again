@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Down and Back Again: a roguelike for the ZX Spectrum Next</title>
+<meta name="description" content="Go down twelve levels, grab the Sunstone from under a sleeping dragon, and get back out. A free turn-based roguelike for the ZX Spectrum Next.">
+<meta property="og:title" content="Down and Back Again">
+<meta property="og:description" content="Go down. Grab the Sunstone. Get back! A free roguelike for the ZX Spectrum Next.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://mikeynma.github.io/down-and-back-again/share.png">
+<meta property="og:url" content="https://mikeynma.github.io/down-and-back-again/">
+<link rel="canonical" href="https://mikeynma.github.io/down-and-back-again/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#09090b">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Down and Back Again, top of the page"><img src="icon.svg" width="28" height="28" alt=""><span>Down and Back Again</span></a>
+    <nav aria-label="Sections">
+      <a href="#features">Features</a><a href="#screens">Screens</a><a href="#how">How to play</a><a href="#tips">Tips</a><a href="#changes">Changelog</a>
+    </nav>
+    <a class="btn btn-sm" href="#download">Download</a>
+  </div>
+</header>
+
+<main>
+<section class="hero wrap">
+  <div class="hero-text">
+    <span class="badge">Free &middot; ZX Spectrum Next</span>
+    <h1><img class="logo" src="logo.svg" width="692" height="68" alt="Down and Back Again"></h1>
+    <p class="lead">Go down. Grab the Sunstone. Get back!</p>
+    <p>A dragon sleeps on a glowing gem, twelve levels under the tavern. Pinching it is the easy part. Then you climb back up, through every level you came down, with a very cross dragon behind you.</p>
+    <div class="actions">
+      <a class="btn" href="#download">Download for the Next</a>
+      <a class="btn btn-ghost" href="#how">How to play</a>
+    </div>
+  </div>
+  <a class="hero-shot shot" href="shots/hero.png" data-caption="The loading screen">
+    <img src="shots/hero-scene.png" width="640" height="316" alt="The loading screen: a wizard with a torch in a brick corridor, a skeleton, a ghost, a rat and a bat in the dark, and a dragon on a pile of gold at the far end">
+  </a>
+</section>
+
+<section id="features" class="wrap">
+  <p class="eyebrow">Features</p>
+  <h2>A proper roguelike, made to be fair</h2>
+  <div class="grid cards">
+    <article class="card"><h3>A new dungeon every run</h3><p>Twelve levels in four regions: the Crypt, the Glowcaves, the Drowned Temple and the Clockwork Keep. Each has its own monsters, music and boss.</p></article>
+    <article class="card"><h3>Down is only half of it</h3><p>Every level stays as you left it. On the way back up, the dungeon has changed its mind about you.</p></article>
+    <article class="card"><h3>You always know the odds</h3><p>One twenty-sided die decides everything, and the screen says what you need. Look at a monster to see how many hits it takes, both ways.</p></article>
+    <article class="card"><h3>Not everything wants a fight</h3><p>Some monsters are wary, some are friendly. Folk like a chat. Feed a hungry animal, make a friend, bring a pet.</p></article>
+    <article class="card"><h3>Grow by doing</h3><p>No experience points. Fight, cast and dodge well, and your scores may rise when you take the stairs.</p></article>
+    <article class="card"><h3>Mystery in every bottle</h3><p>Potions and scrolls are unknown until you try them. Spells come from scrolls, and wands run out.</p></article>
+    <article class="card"><h3>A different story each time</h3><p>Every run draws its own handful of surprises. The tavern tells you three rumours about them. One is a fib.</p></article>
+    <article class="card"><h3>For the whole family</h3><p>Easy mode gives you three lives. A short run is six levels. Relay mode lets two players take turns.</p></article>
+    <article class="card"><h3>Race a friend</h3><p>Type a dungeon number and you both get the same dungeon. Compare scores in the hall of fame.</p></article>
+    <article class="card"><h3>Heroes are remembered</h3><p>With an SD card, the game keeps your hall of fame and your fallen heroes. You may find their traces in later runs.</p></article>
+    <article class="card"><h3>Ten classes, seven races</h3><p>Wizard, witch, warrior, rogue, cleric, ranger, bard, druid, and two more to earn. Pick a look and a robe colour too.</p></article>
+    <article class="card"><h3>Music that follows you</h3><p>Every region has its own tune on the Next's sound chips. It gets tense when something wakes, and goes quiet when you tiptoe.</p></article>
+  </div>
+</section>
+
+<section id="screens" class="wrap">
+  <p class="eyebrow">Screens</p>
+  <h2>A look inside</h2>
+  <p class="sub">Click a picture to see it bigger. Only the first few levels: the rest is for you to find.</p>
+  <div class="gallery">
+    <a class="shot" href="shots/01-front-menu.png" data-caption="The front menu. The bard is having a nap."><img src="shots/01-front-menu.png" width="640" height="512" loading="lazy" alt="The front menu, carved on a stone slab on a hill, with a bard asleep against it"></a>
+    <a class="shot" href="shots/02-class.png" data-caption="Choose your class: eight to start with, two more to earn."><img src="shots/02-class.png" width="640" height="512" loading="lazy" alt="Choose your class: wizard, witch, warrior, rogue, cleric, ranger, bard and druid, with their scores"></a>
+    <a class="shot" href="shots/03-crypt.png" data-caption="Level 1: the Crypt."><img src="shots/03-crypt.png" width="640" height="512" loading="lazy" alt="A wizard in a brick room in the Crypt, with a skeleton, a red potion, gold and the stairs"></a>
+    <a class="shot" href="shots/04-look.png" data-caption="Look (L) before you fight: you hit on 12 and need 2 hits. The rat needs 5."><img src="shots/04-look.png" width="640" height="512" loading="lazy" alt="Look mode: a yellow frame around a rat, and the line: You hit on 12, 2 hits. It: 8, 5 hits."></a>
+    <a class="shot" href="shots/05-pack.png" data-caption="Your pack. Who knows what that scroll does?"><img src="shots/05-pack.png" width="640" height="512" loading="lazy" alt="The pack: a staff, a robe, a torch, three apples, cheese, dinner gum, a mushroom, a potion of healing and a scroll"></a>
+    <a class="shot" href="shots/06-spells.png" data-caption="The spell book. Every spell has a grand name."><img src="shots/06-spells.png" width="640" height="512" loading="lazy" alt="The spell book: Spark and Light, 1 Mana each"></a>
+    <a class="shot" href="shots/07-glowcaves.png" data-caption="Further down: the Glowcaves."><img src="shots/07-glowcaves.png" width="640" height="512" loading="lazy" alt="A cave room with glowing crystals in the walls and a pink mushroom"></a>
+    <a class="shot" href="shots/08-temple.png" data-caption="Deeper still: the Drowned Temple. Mind the pools."><img src="shots/08-temple.png" width="640" height="512" loading="lazy" alt="A temple room with pools of water and an eel in one of them"></a>
+    <a class="shot" href="shots/09-map.png" data-caption="M shows the level as you know it."><img src="shots/09-map.png" width="640" height="512" loading="lazy" alt="The map of a level: rooms and corridors, with coloured dots for things you've found"></a>
+  </div>
+</section>
+
+<section id="how" class="wrap">
+  <p class="eyebrow">How to play</p>
+  <h2>Bump into things and see what happens</h2>
+  <div class="grid two">
+    <article class="card">
+      <h3>The keys</h3>
+      <table class="keys">
+        <tr><td><kbd>Q</kbd> <kbd>A</kbd> <kbd>O</kbd> <kbd>P</kbd></td><td>Move up, down, left, right. Or <kbd>5</kbd>&ndash;<kbd>8</kbd>, or a joystick. Press two at once to go diagonally.</td></tr>
+        <tr><td><kbd>SPACE</kbd></td><td>Wait a turn and search, or take the stairs</td></tr>
+        <tr><td><kbd>I</kbd></td><td>Your pack: <kbd>Q</kbd>/<kbd>A</kbd> to pick, <kbd>SPACE</kbd> to use, <kbd>T</kbd> to throw</td></tr>
+        <tr><td><kbd>Z</kbd></td><td>Your spell book</td></tr>
+        <tr><td><kbd>X</kbd></td><td>Your class's special, once a level</td></tr>
+        <tr><td><kbd>K</kbd></td><td>Pray, once a level</td></tr>
+        <tr><td><kbd>L</kbd></td><td>Look at what you can see</td></tr>
+        <tr><td><kbd>M</kbd></td><td>The map</td></tr>
+        <tr><td><kbd>H</kbd></td><td>Help, any time. It takes no turns.</td></tr>
+        <tr><td><kbd>0</kbd> / <kbd>ENTER</kbd></td><td>Back out of things</td></tr>
+      </table>
+    </article>
+    <div class="stack">
+      <article class="card">
+        <h3>The goal</h3>
+        <p>Go down to the dragon and take the Sunstone. Then get back out of the top stairs with it, and you've won.</p>
+      </article>
+      <article class="card">
+        <h3>Bump into it</h3>
+        <p>Walk into a monster to fight it, into a friend to swap places, and into folk to chat. Walk into shrines, wells and fountains to see what they do. Most things do something. Some bite.</p>
+      </article>
+      <article class="card">
+        <h3>The status line</h3>
+        <dl class="status">
+          <div><dt>D</dt><dd>How deep you are</dd></div>
+          <div><dt>HP</dt><dd>Health. Red? Run!</dd></div>
+          <div><dt>F</dt><dd>Fight: hitting things</dd></div>
+          <div><dt>M</dt><dd>Magic: casting spells</dd></div>
+          <div><dt>L</dt><dd>Luck: dodging trouble</dd></div>
+          <div><dt>G</dt><dd>Gold, for your score</dd></div>
+          <div><dt>Mn</dt><dd>Mana. It comes back.</dd></div>
+          <div><dt>Lt</dt><dd>Your torch. Red: nearly out!</dd></div>
+        </dl>
+      </article>
+    </div>
+  </div>
+  <article class="card wide">
+    <h3>Before you go</h3>
+    <p>Type a name, then pick a class, a look, a race and a robe colour. Then choose how hard: easy mode gives you three lives, normal gives you one, and relay is for two players taking turns. The dials make it easier or harder: monsters, traps, torches, and how deep it goes.</p>
+  </article>
+</section>
+
+<section id="tips" class="wrap">
+  <p class="eyebrow">Tips</p>
+  <h2>From those who went before</h2>
+  <ul class="tips">
+    <li>Press <kbd>L</kbd> to Look before you fight.</li>
+    <li>Running away is a fine plan.</li>
+    <li>Rest when you're hurt, away from trouble.</li>
+    <li>Let sleeping monsters lie.</li>
+    <li>Wait (<kbd>SPACE</kbd>) to search for traps.</li>
+    <li>A dead end? Wait. Maybe there's a door.</li>
+    <li>Torches burn down. Carry spares.</li>
+    <li>Keep a torch lit. Something waits in the dark.</li>
+    <li>Try odd potions when it's safe.</li>
+    <li>Throw the potions you don't trust.</li>
+    <li>Read scrolls when nothing's near.</li>
+    <li>One ring at a time. Choose well.</li>
+    <li>Fight rat packs in a corridor.</li>
+    <li>Bats flit about. Let them come to you.</li>
+    <li>Slimes split. Hit them hard, or walk away.</li>
+    <li>Throw food to a hungry animal.</li>
+    <li>Friendly folk like a chat. Bump them!</li>
+    <li>Rumours are mostly true. Mostly.</li>
+    <li>Easy mode: three lives. No shame.</li>
+    <li>Some names are more than names...</li>
+  </ul>
+</section>
+
+<section id="download" class="wrap">
+  <div class="card download">
+    <div>
+      <p class="eyebrow">Download</p>
+      <h2>Play it now</h2>
+      <p>It's free. One file, for a ZX Spectrum Next or an emulator.</p>
+      <p class="meta">Latest build: <!--v-->v143, 23 October 2026, 400 KB<!--/v--></p>
+      <div class="actions"><a class="btn" href="down-and-back-again.nex" download>Download the .nex</a></div>
+    </div>
+    <ol class="steps">
+      <li><b>On a real Next:</b> copy <code>down-and-back-again.nex</code> to your SD card. Pick it in the Browser and press <kbd>ENTER</kbd>.</li>
+      <li><b>In an emulator:</b> open the <code>.nex</code> file in CSpect. Give it an SD card folder if you want your scores kept.</li>
+      <li><b>Your save:</b> the game writes <code>dabagain.sav</code> beside it: the hall of fame, unlocks and past heroes. Keep it when you download a new version.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="changes" class="wrap">
+  <p class="eyebrow">Changelog</p>
+  <h2>What's new</h2>
+  <div class="log">
+    <article>
+      <header><span class="badge">v141</span><time datetime="2026-10-23">23 October 2026</time></header>
+      <ul>
+        <li>Two ways down: some levels have a second stairs, and each one promises something different.</li>
+        <li>A wandering pedlar. You can haggle, if you're lucky.</li>
+        <li>An errand from a wizard in the tavern, with a reward at the end.</li>
+        <li>Old-school magic: a new dial for winners, where you ready your spells on each level.</li>
+        <li>The music follows you: quieter when you tiptoe, thinner when your torch runs low.</li>
+        <li>Try a dungeon number that's a date. December's monsters dress up.</li>
+        <li>Torn diary pages from past heroes.</li>
+      </ul>
+    </article>
+    <article>
+      <header><span class="badge">v132</span><time datetime="2026-10-21">21 October 2026</time></header>
+      <ul>
+        <li>A new front menu: a picture, with title music.</li>
+        <li>Music for every region, and for the climb back up.</li>
+        <li>Saving to the SD card: the hall of fame, unlocks, and your past heroes.</li>
+        <li>Past heroes leave their mark on later runs.</li>
+        <li>Relay mode for two players.</li>
+        <li><kbd>H</kbd> for help in the middle of a game.</li>
+        <li>Name your favourite weapon after ten kills.</li>
+        <li>Bouncy boots, wobbly bridges and rooms that don't quite add up.</li>
+        <li>The game writes <code>lastrun.txt</code>: the story of your last run.</li>
+      </ul>
+    </article>
+    <article>
+      <header><span class="badge">v113</span><time datetime="2026-10-20">20 October 2026</time></header>
+      <ul>
+        <li>How to play, What's what and tips, all on the front menu.</li>
+        <li>The map (<kbd>M</kbd>).</li>
+        <li>The depth dial: a short run of six levels.</li>
+        <li>A loading screen.</li>
+        <li>Food, cooking at campfires, and feeding hungry animals.</li>
+        <li>Fourteen more spells, and pets that learn a trick.</li>
+        <li>Friendly folk to talk to.</li>
+        <li>Secret doors, and the tavern's rumours.</li>
+        <li>Faster drawing all round.</li>
+      </ul>
+    </article>
+    <article>
+      <header><span class="badge">v42</span><time datetime="2026-10-19">19 October 2026</time></header>
+      <ul>
+        <li>The first playable dungeon: random levels, d20 fights, items, torchlight and line of sight.</li>
+        <li>Four regions with their own monsters and bosses.</li>
+        <li>The Sunstone, the dragon and the climb back up.</li>
+        <li>Traps, shrines and special rooms.</li>
+        <li>Classes, races, spells and pets.</li>
+        <li>Easy mode, numbered dungeons and the hall of fame.</li>
+        <li>Sound effects and music.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="next" class="wrap">
+  <div class="card">
+    <p class="eyebrow">Coming next</p>
+    <h2>On the list</h2>
+    <ul class="soon">
+      <li>Icy rooms in the Clockwork Keep</li>
+      <li>Vaults, and keys to open them</li>
+      <li>Making camp between fights</li>
+      <li>Harder modes for those who've won</li>
+    </ul>
+    <p class="meta">Plans change. Dragons don't.</p>
+  </div>
+</section>
+</main>
+
+<footer class="wrap foot">
+  <img src="icon.svg" width="20" height="20" alt="">
+  <p>Down and Back Again is a free game for the ZX Spectrum Next, written in Z80 assembly. Made in the UK.</p>
+</footer>
+
+<dialog class="lightbox" aria-label="Screenshot">
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-btn lb-prev" type="button" aria-label="Previous picture">&lsaquo;</button>
+  <button class="lb-btn lb-next" type="button" aria-label="Next picture">&rsaquo;</button>
+  <button class="lb-btn lb-close" type="button" autofocus aria-label="Close">&times;</button>
+</dialog>
+<script src="site.js"></script>
+</body>
+</html>
