@@ -33,7 +33,7 @@
 <main>
 <section class="hero wrap">
   <div class="hero-text">
-    <div class="pills"><span class="badge">Free &middot; ZX Spectrum Next</span><a class="pill" href="#changes"><b>New</b> <!--ver-->v177<!--/ver--> is out. See what's new &rarr;</a></div>
+    <div class="pills"><span class="badge">Free &middot; ZX Spectrum Next</span><a class="pill" href="#changes"><b>New</b> <!--ver-->v196<!--/ver--> is out. See what's new &rarr;</a></div>
     <h1><img class="logo" src="logo.svg" width="692" height="68" alt="Down and Back Again"></h1>
     <p class="lead">Go down. Grab the Sunstone. Get back!</p>
     <p>A dragon sleeps on a glowing gem, twelve levels under the tavern. Pinching it is the easy part. Then you climb back up, through every level you came down, with a very cross dragon behind you.</p>
@@ -64,7 +64,8 @@
     <article class="card"><h3>Ten classes, seven races</h3><p>Wizard, witch, warrior, rogue, cleric, ranger, bard, druid, and two more to earn. Pick a look and a robe colour too.</p></article>
     <article class="card"><h3>A dungeon that reacts</h3><p>Fire spreads, water carries a spark, cold freezes it solid, and clouds drift where they like. Monsters play by the same rules you do.</p></article>
     <article class="card"><h3>Odd jobs and odd folk</h3><p>A pedlar who haggles, a wizard with an errand, a troll with a riddle. Some levels even offer two ways down. Choose well.</p></article>
-    <article class="card"><h3>Something to come back for</h3><p>Win once and new things open up: new heroes, new looks, and a harder way to play for those who like it old-school.</p></article>
+    <article class="card"><h3>Something to come back for</h3><p>Win once and new things open up: new heroes, new looks, stars that make the next run harder one rule at a time, and promises to keep for bragging rights.</p></article>
+    <article class="card"><h3>Locked doors and long naps</h3><p>Some levels hide a vault: find its key, pick the lock or break it down, then choose one treasure of three. Hurt? Make camp, and hope nothing finds you.</p></article>
     <article class="card"><h3>Music that follows you</h3><p>Every region has its own tune on the Next's sound chips. It gets tense when something wakes, and goes quiet when you tiptoe.</p></article>
   </div>
 </section>
@@ -102,6 +103,7 @@
         <tr><td><kbd>Z</kbd></td><td>Your spell book</td></tr>
         <tr><td><kbd>X</kbd></td><td>Your class's special, once a level</td></tr>
         <tr><td><kbd>K</kbd></td><td>Pray, once a level</td></tr>
+        <tr><td><kbd>C</kbd></td><td>Make camp: sleep it off and wake up rested, if nothing finds you first</td></tr>
         <tr><td><kbd>L</kbd></td><td>Look at what you can see</td></tr>
         <tr><td><kbd>M</kbd></td><td>The map</td></tr>
         <tr><td><kbd>H</kbd></td><td>Help, any time. It takes no turns. You can give up a run there too.</td></tr>
@@ -145,6 +147,7 @@
     <li>Press <kbd>L</kbd> to Look before you fight.</li>
     <li>Running away is a fine plan.</li>
     <li>Rest when you're hurt, away from trouble.</li>
+    <li>Camp in a dead end. Fewer things wander by.</li>
     <li>Let sleeping monsters lie.</li>
     <li>Wait (<kbd>SPACE</kbd>) to search for traps.</li>
     <li>A dead end? Wait. Maybe there's a door.</li>
@@ -164,7 +167,7 @@
     <li>Fire spreads. Mind the bookshelves.</li>
     <li>Spores? Walk away, or hold your breath.</li>
     <li>Ice is slippery. Plan your stops.</li>
-    <li>Rubble can't be cleared, but it never blocks your only way up. Find another way round.</li>
+    <li>Rubble blocks the way? Bump it to dig. Mind the noise.</li>
     <li>Two ways down? Read the stairs before you choose.</li>
     <li>Some names are more than names...</li>
   </ul>
@@ -176,7 +179,7 @@
       <p class="eyebrow">Download</p>
       <h2>Play it now</h2>
       <p>It's free. One file, for a ZX Spectrum Next or an emulator.</p>
-      <p class="meta">Latest build: <!--v-->v177, 24 October 2026, 400 KB<!--/v-->. <a href="#changes">What's new in it</a></p>
+      <p class="meta">Latest build: <!--v-->v196, 27 October 2026, 432 KB<!--/v-->. <a href="#changes">What's new in it</a></p>
       <div class="actions"><a class="btn" href="down-and-back-again.nex" download>Download the .nex</a></div>
     </div>
     <ol class="steps">
@@ -191,6 +194,17 @@
   <p class="eyebrow">Changelog</p>
   <h2>What's new</h2>
   <div class="log">
+    <article>
+      <header><span class="badge">v196</span><time datetime="2026-10-27">27 October 2026</time></header>
+      <ul>
+        <li>Vaults: some levels have a locked room with three treasures inside. Take one and the others are gone. The key is somewhere on the level, and it may not want to be found. No key? There are other ways in.</li>
+        <li>Make camp with <code>C</code>: sleep for a while and wake up with full Health and Mana. The game tells you the odds of company first. Pets keep watch, and you may dream something useful.</li>
+        <li>Stars, for those who've won: each star adds one rule to make the next run harder, up to five. Win at your best and the next star opens.</li>
+        <li>Promises, for those who've won: no kills, no magic, no pets or no food, for the whole run. Keep one to the end for a badge in the hall of fame.</li>
+        <li>Rubble can be dug through now: bump it a few times. It's noisy.</li>
+        <li>Look no longer flickers when you press <code>L</code> again with only one monster in sight.</li>
+      </ul>
+    </article>
     <article>
       <header><span class="badge">v177</span><time datetime="2026-10-24">24 October 2026</time></header>
       <ul>
@@ -313,9 +327,6 @@
     <h2>On the list</h2>
     <ul class="soon">
       <li>A camp at the top: a shop, a healer and a home to come back to</li>
-      <li>Vaults, and keys to open them</li>
-      <li>Making camp between fights</li>
-      <li>Harder modes for those who've won</li>
     </ul>
     <p class="meta">Plans change. Dragons don't.</p>
   </div>
