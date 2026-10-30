@@ -139,3 +139,6 @@ main > section { padding: 72px 0 0; }
 .log article:first-child::before { left: -21px; top: 27px; box-shadow: 0 0 0 4px rgb(252 211 77 / 0.2); }
 .log article:first-child header::after { content: "Just released"; margin-left: auto; font: 600 0.7rem/1 var(--mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); }
 .log article:first-child ul { color: #d4d4d8; }
+.video { margin: 0 auto 28px; max-width: 800px; }
+.video video { display: block; width: 100%; height: auto; image-rendering: pixelated; background: #000; border-radius: var(--radius); border: 1px solid var(--border); }
+.video figcaption { margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
